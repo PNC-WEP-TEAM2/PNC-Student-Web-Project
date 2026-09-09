@@ -1,0 +1,9 @@
+.page-intro { background: var(--navy); color: var(--white); padding: 78px 0; }
+.page-intro p { color: #c7dce7; max-width: 620px; font-size: 1.1rem; }
+.about-story { display: grid; gap: 60px; grid-template-columns: .8fr 1.2fr; }
+.story-marker { border-left: 4px solid var(--coral); font-family: var(--display); font-size: 2.3rem; line-height: 1.15; padding-left: 22px; }
+.value-grid { display: grid; gap: 18px; grid-template-columns: repeat(4, 1fr); }
+.value-card { border: 1px solid var(--line); padding: 24px; }
+.value-card span { color: var(--coral); display: block; font-family: var(--display); font-size: 1.8rem; margin-bottom: 18px; }
+@media (max-width: 760px) { .about-story, .value-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .about-story, .value-grid { grid-template-columns: 1fr; } }

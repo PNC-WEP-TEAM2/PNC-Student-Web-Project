@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Control Center | Synergy</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <aside class="admin-sidebar">
+    <div class="admin-brand"><span class="brand-pulse"></span>SYNERGY<span class="brand-suffix">/ADMIN</span></div>
+    <div class="sidebar-label">Control center</div>
+    <nav class="admin-nav" aria-label="Admin navigation">
+      <a class="active" href="dashboard.html"><span class="dashboard-icon" aria-hidden="true"></span><span>Overview</span></a>
+    </nav>
+    <div class="system-status"><span class="status-dot"></span><div><strong>Systems online</strong><small>Local workspace</small></div></div>
+  </aside>
+  <main class="admin-main">
+    <header class="admin-topbar"><div><span class="admin-kicker">Workspace / Overview</span><h1>Command center</h1></div><div class="admin-user"><span class="user-avatar" id="userInitial">A</span><div><strong id="adminName">Admin</strong><small>Administrator</small></div><button class="icon-button" id="logoutButton" type="button" aria-label="Log out">↪</button></div></header>
+    <section class="metric-grid" aria-label="Workspace metrics"><article class="metric-card accent-cyan"><span class="metric-label">Team nodes</span><strong id="memberCount">0</strong><small><i class="trend-up">↗</i> active collaborators</small></article><article class="metric-card accent-lime"><span class="metric-label">Task queue</span><strong id="taskCount">0</strong><small><i class="trend-up">↗</i> open assignments</small></article><article class="metric-card accent-orange"><span class="metric-label">System state</span><strong>LIVE</strong><small><i class="status-dot"></i> all services ready</small></article></section>
+    <section class="admin-grid"><article class="admin-panel team-panel"><div class="panel-heading"><div><span class="admin-kicker">Directory</span><h2>Team nodes</h2></div><span class="panel-count" id="directoryCount">0 nodes</span></div><form class="member-form" id="memberForm"><input id="memberName" type="text" placeholder="New member name" aria-label="New member name" required><input id="memberRole" type="text" placeholder="Role or specialty" aria-label="Role or specialty" required><button class="tech-button" type="submit">+ Add node</button></form><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Member</th><th>Specialty</th><th>State</th><th>Action</th></tr></thead><tbody id="memberRows"></tbody></table></div></article><article class="admin-panel activity-panel"><div class="panel-heading"><div><span class="admin-kicker">Live feed</span><h2>Activity</h2></div><span class="live-label"><span class="status-dot"></span> LIVE</span></div><div class="activity-list"><div class="activity-item"><span class="activity-icon cyan">+</span><div><strong>Workspace initialized</strong><small>Default team directory loaded</small></div><time>now</time></div><div class="activity-item"><span class="activity-icon lime">✓</span><div><strong>Access verified</strong><small>Admin permissions enabled</small></div><time>now</time></div><div class="activity-item"><span class="activity-icon orange">↗</span><div><strong>Network ready</strong><small>All local services responding</small></div><time>now</time></div></div></article></section>
+    <footer class="admin-footer"><span>SYNERGY ADMIN CONSOLE <b>v1.0</b></span><span>Secure local session</span></footer>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
