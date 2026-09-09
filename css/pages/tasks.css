@@ -1,10 +1,75 @@
-.tasks-header { align-items: end; display: flex; justify-content: space-between; gap: 25px; padding: 64px 0 30px; }
-.task-form { display: flex; gap: 10px; margin-bottom: 26px; }
-.task-form input { background: var(--white); border: 1px solid var(--line); border-radius: 8px; flex: 1; min-width: 0; padding: 13px 14px; }
-.task-list { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0 0 90px; }
-.task-item { align-items: center; background: var(--white); border-left: 4px solid var(--sky); display: flex; gap: 15px; justify-content: space-between; padding: 17px 20px; }
-.task-item p { color: var(--ink); margin: 0; }
-.empty-state { background: var(--mist); color: var(--muted); padding: 24px; text-align: center; }
-.workspace-guide { border-top: 1px solid var(--line); margin: 10px 0 90px; padding-top: 44px; }
-.workspace-guide h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 10px 0 24px; }
-@media (max-width: 560px) { .tasks-header { align-items: start; display: block; } .task-form { align-items: stretch; flex-direction: column; } }
+.tasks-header {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 64px 0 30px;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.task-form input {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    flex: 1;
+    min-width: 0;
+    padding: 13px 14px;
+}
+
+.task-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 90px;
+}
+
+.task-item {
+    align-items: center;
+    background: var(--white);
+    border-left: 4px solid var(--sky);
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    padding: 17px 20px;
+}
+
+.task-item p {
+    color: var(--ink);
+    margin: 0;
+}
+
+.empty-state {
+    background: var(--mist);
+    color: var(--muted);
+    padding: 24px;
+    text-align: center;
+}
+
+.workspace-guide {
+    border-top: 1px solid var(--line);
+    margin: 10px 0 90px;
+    padding-top: 44px;
+}
+
+.workspace-guide h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin: 10px 0 24px;
+}
+
+@media (max-width: 560px) {
+    .tasks-header {
+        align-items: start;
+        display: block;
+    }
+
+    .task-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
