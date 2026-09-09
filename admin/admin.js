@@ -7,11 +7,11 @@
 
   const membersKey = 'members';
   const defaultMembers = [
-    { name: 'Maya Chen', role: 'Lead Developer', photo: 'https://i.pravatar.cc/500?img=47' },
-    { name: 'Noah Williams', role: 'UI/UX Designer', photo: 'https://i.pravatar.cc/500?img=12' },
-    { name: 'Amina Patel', role: 'Frontend Engineer', photo: 'https://i.pravatar.cc/500?img=32' },
-    { name: 'Leo Martin', role: 'Product Strategist', photo: 'https://i.pravatar.cc/500?img=68' },
-    { name: 'Sofia Garcia', role: 'Content Lead', photo: 'https://i.pravatar.cc/500?img=44' }
+    { name: 'Borey Moeun', role: 'Lead Developer', photo: './page/img/Borey-moeun.jpg' },
+    { name: 'Sombath Y', role: 'UI/UX Designer', photo: './page/img/Sombath.jpg' },
+    { name: 'Dalin Mab', role: 'Frontend Engineer', photo: './page/img/Dalin.jpg' },
+    { name: 'Sotheany Hou', role: 'Product Strategist', photo: './page/img/Sotheany.jpg' },
+    { name: 'Veasna Touch', role: 'Content Lead', photo: './page/img/Veasna.jpg' }
   ];
 
   function getMembers() {
