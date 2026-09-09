@@ -10,6 +10,39 @@
     max-width: 430px;
 }
 
+.team-overview {
+    border-bottom: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+}
+
+.team-overview div {
+    align-items: baseline;
+    display: flex;
+    gap: 12px;
+    padding: 18px 22px;
+}
+
+.team-overview div + div {
+    border-left: 1px solid var(--line);
+}
+
+.team-overview strong {
+    color: var(--coral);
+    font-family: var(--display);
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.team-overview span {
+    color: var(--muted);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
 .member-grid {
     display: grid;
     gap: 20px;
@@ -61,6 +94,31 @@
     padding-top: 15px;
 }
 
+.member-details {
+    border-left: 2px solid var(--blue);
+    margin: 20px 0 0;
+    padding-left: 12px;
+}
+
+.member-details div {
+    display: flex;
+    gap: 10px;
+}
+
+.member-details dt {
+    color: var(--blue);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.member-details dd {
+    color: var(--muted);
+    font-size: .8rem;
+    margin: 0;
+}
+
 .member-card .social-links a {
     color: var(--blue);
 }
@@ -75,6 +133,15 @@
     .members-header {
         align-items: start;
         display: grid;
+    }
+
+    .team-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .team-overview div + div {
+        border-left: 0;
+        border-top: 1px solid var(--line);
     }
 
     .member-grid {
